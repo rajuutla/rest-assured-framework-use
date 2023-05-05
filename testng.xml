@@ -1,0 +1,8 @@
+<suite name="gorest api test">
+	<test name="Create And Delete Users">
+		<classes>
+			<class name="com.gorest.CreateUser"/>
+			<class name="com.gorest.DeleteUser"/>
+		</classes>
+	</test>
+</suite>
