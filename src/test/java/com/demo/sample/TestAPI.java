@@ -22,8 +22,6 @@ public class TestAPI {
 		.then()
 		.statusCode(200)
 		.log().all();
-		
-		
 	}
 	
 	@Test
@@ -33,7 +31,6 @@ public class TestAPI {
 		userData.put("name", "Testing1");
 		userData.put("job", "QA");
 		
-		
 		userId = given()
 				.contentType("application/json")
 				.body(userData)
@@ -41,10 +38,6 @@ public class TestAPI {
 				.when()
 				.post("https://reqres.in/api/users")
 				.jsonPath().getInt("id");
-		
-		//.then()
-		//.statusCode(201)
-		//.log().all();
 		
 	}
 	
